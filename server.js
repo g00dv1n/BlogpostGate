@@ -78,6 +78,7 @@ const task = () => {
       console.log('start');
       try {
           let posts = yield getAllPosts();
+          posts = posts.slice(0,5);
           dropPosts();
 
           console.log(posts);
