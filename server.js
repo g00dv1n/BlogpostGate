@@ -78,7 +78,7 @@ const task = () => {
       console.log('start');
       try {
           let posts = yield getAllPosts();
-          posts = posts.slice(0,5);
+          posts = posts.slice(0,1);
           dropPosts();
 
           console.log(posts);
@@ -116,7 +116,7 @@ app.get('/run-task', (req, res) => {
     res.end();
 });
 
-cron.schedule('0 * * * *', () =>{
+cron.schedule('*/20 * * * *', () =>{
     console.log('run task!');
     task();
 });

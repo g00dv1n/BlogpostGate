@@ -9,7 +9,7 @@ let config = {
     blogURLS: [
         'https://threatinfo.net/poster/post.php',
         'https://adwaretips.net/botoposter/',
-        'http://deleteadware.net/botoposter/',
+        //'http://deleteadware.net/botoposter/',
         'http://anti-malware.gridinsoft.com/botoposter/',
         'http://adwareremoval.info/botoposter/index.php',
         'http://pc-threat-info.com/botoposter/index.php',
